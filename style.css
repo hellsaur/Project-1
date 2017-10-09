@@ -45,10 +45,11 @@ z-index: 444;
 }
 
 @keyframes loop {
-  0% {
+  from {
     background-position: 0;
   }
-  100% {
+
+  to {
     background-position: -1200px;
   }
 }
