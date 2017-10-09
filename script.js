@@ -2,11 +2,9 @@ console.log("main js is connected");
 
 let car1 = document.getElementById('car')
 let car2 = document.getElementById('car2')
-let button = document.getElementById("theButton");
 
 let c1 =0;
 let c2 =0;
-
 
 
 function go(race) {
@@ -27,18 +25,21 @@ function go(race) {
 window.addEventListener('keyup', go);
 
 function winner(){
-  if(c1 + 450 === 1200){
-    alert("car1is the Winner!!!");
+  if(c1 + 500 === 1200){
+   document.querySelector('player1')style.display.block;
     window.removeEventListener("keyup", go);
   }
-  else if(c2 +450 === 1200){
-    alert("car2 is the Winner!!!");
+  else if(c2 +500 === 1200){
+    alert("player 2 is the Winner!!!");
     window.removeEventListener("keyup", go);
   }
 }
 
 
-// function restart(){
-//   if(c1 == 1200 || c2 == 1200){
-// c1 =0 && c2 = 0
-//   }}
+
+//  window.onload = function() {
+// let landing = document.querySelector('landing')
+//     landing.setAttribute('onclick','this.style.display="none";');
+// }
+
+

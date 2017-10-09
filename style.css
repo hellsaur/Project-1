@@ -3,8 +3,31 @@
   margin:0;
 }
 body{
-  background-color:white;
+  background-color:black;
 }
+.landing{
+  position: absolute;
+  /*background-image: url('images/landing.png');*/
+  background-size:cover;
+  background-repeat: no-repeat;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
+#landingB{
+position: absolute;
+margin-top: 600px;
+margin-left: 650px;
+height: 80px;
+width:120px;
+background-color: orange;
+font-family: 'Futura';
+font-size:40px;
+z-index: 444;
+}
+
 .container {
     position:absolute;
     background: url('images/racetrack.png');
@@ -16,6 +39,7 @@ body{
     transform: translateX(-50%) translateY(-50%);
     animation: loop 3s linear infinite;
     animation-play-state:running;
+    z-index: -2;
 
 }
 
@@ -35,11 +59,33 @@ body{
 }
 #car2{
 position: absolute;
-margin-top: 380px;
+margin-top: 370px;
+}
+.player1{
+  position: absolute;
+  display:hidden;
+  height: 350px;
+  width: 500px;
+  border-radius: 20%;
+  background-color: rgba(0,0,0,.6);
+  top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    display:none;
 }
 
-
-#wheel1{
+.player2{
+  position: absolute;
+  display:hidden;
+  height: 350px;
+  width: 500px;
+  border-radius: 20%;
+  background-color: rgba(0,0,0,.6);
+  top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
+/*#wheel1{
   position: absolute;
   margin-left: 350px;
 
@@ -58,8 +104,6 @@ margin-top: 380px;
 #wheel2{
   position: absolute;
   margin-left: 50px;
-
-
-
 }
+*/
 
