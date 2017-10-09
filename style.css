@@ -14,7 +14,7 @@ body{
     top:50%;
     left:50%;
     transform: translateX(-50%) translateY(-50%);
-    animation: loop 2s linear infinite;
+    animation: loop 3s linear infinite;
     animation-play-state:running;
 
 }
@@ -39,10 +39,14 @@ margin-top: 380px;
 }
 
 
-.wheel4{
-    animation: spin 2s linear   infinite;
-}
+#wheel1{
+  position: absolute;
+  margin-left: 350px;
 
+}
+#wheel1 spin{
+  animation:spin 3s linear infinite;
+}
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -51,5 +55,11 @@ margin-top: 380px;
         transform:rotate(360deg);
     }
 
+#wheel2{
+  position: absolute;
+  margin-left: 50px;
 
+
+
+}
 

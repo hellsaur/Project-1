@@ -7,6 +7,8 @@ let button = document.getElementById("theButton");
 let c1 =0;
 let c2 =0;
 
+
+
 function go(race) {
   let key = race.keyCode;
     //car 1
@@ -35,3 +37,8 @@ function winner(){
   }
 }
 
+
+// function restart(){
+//   if(c1 == 1200 || c2 == 1200){
+// c1 =0 && c2 = 0
+//   }}
