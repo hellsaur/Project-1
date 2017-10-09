@@ -4,6 +4,7 @@
 }
 body{
   background-color:black;
+  overflow-y: hidden;
 }
 .landing{
   position: absolute;
@@ -30,14 +31,14 @@ z-index: 444;
 
 .container {
     position:absolute;
-    background: url('images/racetrack.png');
+    background: url('images/racetrack1.png');
     background-repeat: repeat-x;
     width:1200px;
     height:600px;
     top:50%;
     left:50%;
     transform: translateX(-50%) translateY(-50%);
-    animation: loop 3s linear infinite;
+    animation: loop 1s linear infinite;
     animation-play-state:running;
     z-index: -2;
 
@@ -50,6 +51,12 @@ z-index: 444;
   100% {
     background-position: -1200px;
   }
+}
+#logo{
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 30px;
+  z-index: -1;
 }
 
 #car{
@@ -69,7 +76,7 @@ margin-top: 370px;
   border-radius: 20%;
   background-color: rgba(0,0,0,.6);
   top:50%;
-    left:50%;
+    left:30%;
     transform: translateX(-50%) translateY(-50%);
     display:none;
 }
@@ -82,9 +89,25 @@ margin-top: 370px;
   border-radius: 20%;
   background-color: rgba(0,0,0,.6);
   top:50%;
-    left:50%;
+    left:30%;
     transform: translateX(-50%) translateY(-50%);
     display: none;
+}
+.finishLine{
+  position: absolute;
+  margin-left: 820px;
+  margin-top: 60px;
+  display: none;
+  z-index: 0;
+
+}
+
+#audio{
+display: none;
+}
+#endsound{
+  display: none;
+}
 /*#wheel1{
   position: absolute;
   margin-left: 350px;
