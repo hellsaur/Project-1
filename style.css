@@ -28,19 +28,18 @@ body{
   }
 }
 
-.car{
-  position:relative;
-
-}
-.car2{
+#car{
   position:absolute;
-  margin-top:200px;
+  margin-top: 390px;
+
+}
+#car2{
+position: absolute;
+margin-top: 380px;
 }
 
 
-#wheel4{
-  margin: 0;
-  padding: 0;
+.wheel4{
     animation: spin 2s linear   infinite;
 }
 
