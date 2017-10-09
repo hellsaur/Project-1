@@ -26,20 +26,18 @@ window.addEventListener('keyup', go);
 
 function winner(){
   if(c1 + 500 === 1200){
-   document.querySelector('player1')style.display.block;
+   let winr = document.querySelector(".player1");
+winr.style.display = "block";
     window.removeEventListener("keyup", go);
   }
   else if(c2 +500 === 1200){
-    alert("player 2 is the Winner!!!");
+     let winr = document.querySelector(".player2");
+winr.style.display = "block";
     window.removeEventListener("keyup", go);
   }
 }
 
 
 
-//  window.onload = function() {
-// let landing = document.querySelector('landing')
-//     landing.setAttribute('onclick','this.style.display="none";');
-// }
 
 
