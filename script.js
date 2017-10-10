@@ -20,19 +20,31 @@ let c2 =0;
 function go(race) {
   let key = race.keyCode;
     //car 1
-    if(key == 88) {
+    if(key == 83) {
         car1.style.transform = `translateX(${c1}px)`;
       c1+= 10;
     }
     //car 2
-    if(key == 77) {
+    if(key == 74) {
      car2.style.transform = `translateX(${c2}px)`;
       c2+= 10;
     }
-    // if(key == 78) {
-    //  car1.style.transform = `translateX(${c1}px)`;
-    //   c1+= 20;
-    // }
+    if(key == 87) {
+     car1.style.transform = `translateY(${c1}px)`;
+      c1+= 10;
+    }
+       if(key == 88) {
+     car1.style.transform = `translateY(${c1}px)`;
+      c1-= 10;
+    }
+     if(key == 85) {
+     car2.style.transform = `translateY(${c2}px)`;
+      c2+= 10;
+    }
+       if(key == 77) {
+     car2.style.transform = `translateY(${c2}px)`;
+      c2-=10;
+    }
    winner();
 }
 
