@@ -9,7 +9,8 @@ let winr2 = document.querySelector(".player2");
 let wheel1 = document.querySelector("#wheel1");
 let wheel2 = document.querySelector("#wheel2");
 let wheel3 = document.querySelector("#wheel3");
-let wheel4 = document.querySelector("#wheel4");
+let starB = document.querySelector(".starB");
+let replayB = document.querySelector(".replayB");
 
 let c1 =0;
 let c2 =0;
