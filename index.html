@@ -11,6 +11,12 @@
 </head>
 <body>
 
+  <div onclick="this.style.display='none'; pauseAudio()">
+<img id= "intro"  src="images/landing.png" width="100%">
+    <button id="landingB" type="button" onclick="landing()">Play</button>
+    </div>
+     <button class="startB" type="button" onclick="start()">start</button>
+    <button class="replayB" type="button" onclick="startGame()">replay</button>
   <div class="landing">
   <audio id = "audio" controls autoplay>
     <source src="sounds/intro.mp3">
@@ -18,20 +24,21 @@
   <audio id = "endsound">
     <source src="sounds/end.mp3">
   </audio>
-      <img  src="images/landing.png"  type="button" onclick="this.style.display='none'; pauseAudio()">
+
 </div>
+
 <img id="logo" src="images/logo.png" width="400">
 <div class="container">
 
 
       <div id = "car"><img src="images/car.png" width="500" height="180" >
 
-          <!-- <div id = "wheel1"><img id =" spin"src="images/carfw.png" height="70"></div>
-             <div id = "wheel2"><img src="images/carbw.png" height="70"></div> -->
+          <div id = "wheel1"><img id =" spin" src="images/carfw.png" height="75"></div>
+             <div id = "wheel2"><img src="images/carbw.png" height="77"></div>
     </div>
      <div id= "car2"><img src="images/car2.png" width="500" height="320" >
-<!--         <div id = "wheel3"><img src="images/car2fw.png" height="50"></div>
-             <div class = "wheel4"><img src="images/car2bw.png" height="50"></div> -->
+        <div id = "wheel3"><img src="images/car2fw.png" height="70"></div>
+             <div id = "wheel4"><img src="images/car2bw.png" height="70"></div>
   </div>
 </div>
 <div class="player1">

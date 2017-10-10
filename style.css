@@ -10,36 +10,53 @@ body{
   position: absolute;
   /*background-image: url('images/landing.png');*/
   background-size:cover;
+  background-color: black;
   background-repeat: no-repeat;
   top:50%;
   left:50%;
   transform: translateX(-50%) translateY(-50%);
 
 }
-
+#intro{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+}
 #landingB{
+
 position: absolute;
-margin-top: 600px;
-margin-left: 650px;
 height: 80px;
 width:120px;
+border: 3px solid black;
 background-color: orange;
 font-family: 'Futura';
 font-size:40px;
-z-index: 444;
+top: 70%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+}
+#landingB:hover{
+  border: 3px solid orange;
+background-color: black;
+font-family: 'Futura';
+font-size:40px;
+z-index: 5;
+color: white;
 }
 
 .container {
     position:absolute;
     background: url('images/racetrack1.png');
     background-repeat: repeat-x;
-    width:1200px;
+    width:1500px;
     height:600px;
     top:50%;
     left:50%;
+    border:20px solid gray;
     transform: translateX(-50%) translateY(-50%);
     animation: loop 1s linear infinite;
-    animation-play-state:running;
+    animation-play-state:paused;
     z-index: -2;
 
 }
@@ -55,8 +72,8 @@ z-index: 444;
 }
 #logo{
   position: absolute;
-  margin-left: 500px;
-  margin-top: 30px;
+  left: 500px;
+
   z-index: -1;
 }
 
@@ -109,13 +126,40 @@ display: none;
 #endsound{
   display: none;
 }
-/*#wheel1{
+#wheel1{
   position: absolute;
-  margin-left: 350px;
+      left: 346.5px;
+      top: 78px;
+      animation: spin .01s linear infinite;
+      animation-play-state: paused;
 
 }
-#wheel1 spin{
-  animation:spin 3s linear infinite;
+
+#wheel2{
+  position: absolute;
+      left: 50px;
+      top: 70px;
+      animation: spin .01s linear infinite;
+       animation-play-state: paused;
+
+}
+
+#wheel3{
+  position: absolute;
+      left: 380px;
+      top: 160px;
+      animation: spin .01s linear infinite;
+       animation-play-state: paused;
+
+}
+
+#wheel4{
+  position: absolute;
+      left: 71px;
+      top: 160px;
+      animation: spin .01s linear infinite;
+       animation-play-state: paused;
+
 }
 @keyframes spin {
     from {
@@ -129,5 +173,30 @@ display: none;
   position: absolute;
   margin-left: 50px;
 }
-*/
+
+.replayB{
+position: absolute;
+height: 80px;
+width:120px;
+border: 3px solid black;
+background-color: orange;
+font-family: 'Futura';
+font-size:40px;
+top: 10%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+}
+
+.startB{
+position: absolute;
+height: 80px;
+width:120px;
+border: 3px solid black;
+background-color: orange;
+font-family: 'Futura';
+font-size:40px;
+top: 10%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+}
 

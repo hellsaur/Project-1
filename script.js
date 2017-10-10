@@ -6,6 +6,10 @@ let bg = document.querySelector(".container");
 let finish = document.querySelector(".finishLine");
 let winr = document.querySelector(".player1");
 let winr2 = document.querySelector(".player2");
+let wheel1 = document.querySelector("#wheel1");
+let wheel2 = document.querySelector("#wheel2");
+let wheel3 = document.querySelector("#wheel3");
+let wheel4 = document.querySelector("#wheel4");
 
 let c1 =0;
 let c2 =0;
@@ -20,10 +24,14 @@ function go(race) {
       c1+= 10;
     }
     //car 2
-    if(key == 90) {
+    if(key == 77) {
      car2.style.transform = `translateX(${c2}px)`;
       c2+= 10;
     }
+    // if(key == 78) {
+    //  car1.style.transform = `translateX(${c1}px)`;
+    //   c1+= 20;
+    // }
    winner();
 }
 
@@ -32,22 +40,28 @@ window.addEventListener('keyup', go);
 
 
 function winner(){
-  if(c1 && c2 +500 === 1180){
-    finish.style.display ="block";
-  }
-  if(c1 + 500 === 1200){
+
+  if(c1 + 500 === 1400){
+    bg.style.animationPlayState = "paused";
+   wheel1.style.animationPlayState = "paused";
+   wheel2.style.animationPlayState = "paused";
+   wheel3.style.animationPlayState = "paused";
+   wheel4.style.animationPlayState = "paused";
    winr.style.display = "block";
    playAudio()
    window.removeEventListener("keyup", go);
-   // bg.style.animation = "none";
+
   }
 
-  else if(c2 +500 === 1200){
-
-winr2.style.display = "block";
-playAudio()
- window.removeEventListener("keyup", go);
-// bg.style.animation = "none";
+  else if(c2 +500 === 1400){
+   bg.style.animationPlayState = "paused";
+   wheel1.style.animationPlayState = "paused";
+   wheel2.style.animationPlayState = "paused";
+   wheel3.style.animationPlayState = "paused";
+   wheel4.style.animationPlayState = "paused";
+   winr2.style.display = "block";
+  playAudio()
+  window.removeEventListener("keyup", go);
 
   }
 
@@ -62,3 +76,15 @@ function playAudio(){
   end.play()
 }
 
+function startGame(){
+location.reload()
+
+}
+function start(){
+bg.style.animationPlayState = "running";
+wheel1.style.animationPlayState = "running";
+wheel2.style.animationPlayState = "running";
+wheel3.style.animationPlayState = "running";
+wheel4.style.animationPlayState = "running";
+
+}
