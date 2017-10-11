@@ -4,7 +4,7 @@
 }
 body{
   background-color:black;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .landing{
   position: absolute;
@@ -49,15 +49,15 @@ color: white;
 #p1{
   position:absolute;
   color: white;
-  top:1%;
-  left: 70%;
+  top:6%;
+  left: 75%;
   font-size: 30px;
 }
 #p2{
   position:absolute;
   color: white;
-  top:5%;
-  left: 70%;
+  top:10%;
+  left: 75%;
   font-size: 30px;
 }
 
@@ -65,16 +65,6 @@ span{
   color: orange;
 }
 
-/*.object{
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  background: red;
-  width: 50px;
-  height: 50px;
-  z-index: -1;
-
- }*/
 
 .container {
     position:absolute;
@@ -124,7 +114,7 @@ left: 0px
 #object{
 position: absolute;
   top: 62%;
-  left: 2000px;
+  left: 3000px;
   z-index: -1;
   animation: loop 1s linear infinite;
 }
@@ -133,9 +123,9 @@ position: absolute;
 .player1{
   position: absolute;
   display:hidden;
-  height: 350px;
-  width: 500px;
-  border-radius: 20%;
+  height: 450px;
+  width: 700px;
+  border-radius: 10%;
   background-color: rgba(0,0,0,.6);
   top:50%;
     left:30%;
@@ -146,9 +136,9 @@ position: absolute;
 .player2{
   position: absolute;
   display:hidden;
-  height: 350px;
-  width: 500px;
-  border-radius: 20%;
+  height: 450px;
+  width: 700px;
+  border-radius: 10%;
   background-color: rgba(0,0,0,.6);
   top:50%;
     left:30%;
@@ -172,37 +162,55 @@ display: none;
 }
 #wheel1{
   position: absolute;
-      left: 346.5px;
-      top: 78px;
-      animation: spin .01s linear infinite;
-      animation-play-state: paused;
+  left: 346.5px;
+  top: 78px;
+  animation: spin .01s linear infinite;
+  animation-play-state: paused;
 
 }
 
 #wheel2{
   position: absolute;
-      left: 50px;
-      top: 70px;
-      animation: spin .01s linear infinite;
-       animation-play-state: paused;
+  left: 50px;
+  top: 70px;
+  animation: spin .01s linear infinite;
+  animation-play-state: paused;
 
 }
 
 #wheel3{
   position: absolute;
-      left: 380px;
-      top: 70px;
-      animation: spin .01s linear infinite;
-       animation-play-state: paused;
+  left: 380px;
+  top: 70px;
+  animation: spin .01s linear infinite;
+  animation-play-state: paused;
 
 }
 
 #wheel4{
   position: absolute;
-      left: 71px;
-      top: 70px;
-      animation: spin .01s linear infinite;
-       animation-play-state: paused;
+  left: 71px;
+  top: 70px;
+  animation: spin .01s linear infinite;
+  animation-play-state: paused;
+
+}
+
+#wheel5{
+  position: absolute;
+  left: 345px;
+  top: 43px;
+  animation: spin2 .01s linear infinite;
+  animation-play-state: paused;
+
+}
+
+#wheel6{
+  position: absolute;
+  left: 70px;
+  top: 47px;
+  animation: spin2 .01s linear infinite;
+  animation-play-state: paused;
 
 }
 @keyframes spin {
@@ -211,6 +219,15 @@ display: none;
     }
     to {
         transform:rotate(360deg);
+    }
+  }
+
+@keyframes spin2 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
     }
   }
 

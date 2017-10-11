@@ -9,6 +9,8 @@ let winr2 = document.querySelector(".player2");
 let wheel1 = document.querySelector("#wheel1");
 let wheel2 = document.querySelector("#wheel2");
 let wheel3 = document.querySelector("#wheel3");
+let wheel5 = document.querySelector("#wheel5");
+let wheel6 = document.querySelector("#wheel6");
 let starB = document.querySelector(".starB");
 let replayB = document.querySelector(".replayB");
 let landingB = document.querySelector('.landingB');
@@ -63,26 +65,17 @@ let deleted = false;
 function collision (){
 if(deleted == false){
 
-  if ((car1X + car1W) > objectX && car1X< (objectX+objectW)){
+  if ((car1X + car1W) > objectX && car1X< (objectX+objectW) && (car1Y + car1H) > objectY && car1Y < (objectY+objectH)){
      car1.style.left = (car1X=0) + "px";
-     clearInterval(object);
     deleted = true;
-
     alert("player 1 crashed")
-  }
-
-  if((car1Y + car1H) > objectY && car1Y < (objectY+objectH)){
- car1.style.left = (car1X=0) + "px";
-     clearInterval(object);
-    deleted = true;
-
-    alert("player 1 crashed")
-
+    object.style.display = "none";
   }
   if ((car2X + car2W) > objectX && car2X< (objectX+objectW) && (car2Y + car2H) > objectY && car2Y < (objectY+objectH)){
     car2.style.left = (car2X=0) + "px";
   alert("player 2 crashed")
    deleted = true;
+    object.style.display = "none";
   }
 
 }
@@ -106,7 +99,7 @@ if(deleted == false){
 
 function winner(){
 
-  if(car1X + 500 === 1320){
+  if(car1X + 500 === 1400){
     bg.style.animationPlayState = "paused";
    wheel1.style.animationPlayState = "paused";
    wheel2.style.animationPlayState = "paused";
@@ -118,7 +111,7 @@ function winner(){
 
   }
 
-  else if(car2X +500 === 1320){
+  else if(car2X +500 === 1400){
    bg.style.animationPlayState = "paused";
    wheel1.style.animationPlayState = "paused";
    wheel2.style.animationPlayState = "paused";
@@ -154,6 +147,8 @@ wheel1.style.animationPlayState = "running";
 wheel2.style.animationPlayState = "running";
 wheel3.style.animationPlayState = "running";
 wheel4.style.animationPlayState = "running";
+wheel5.style.animationPlayState = "running";
+wheel6.style.animationPlayState = "running";
 window.addEventListener('keyup', go);
 
 let ob = setInterval(car3,3)
