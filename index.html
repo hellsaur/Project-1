@@ -10,8 +10,8 @@
 
 </head>
 <body>
-    <button class="startB" type="button" onclick="start()">start</button>
-    <button class="replayB" type="button" onclick="startGame()">replay</button>
+    <button class="startB" type="button" onclick="start()" >start</button>
+    <button class="replayB" type="button" onclick="startGame()">Play Again</button>
 
   <div onclick="this.style.display='none'; pauseAudio()">
           <img id= "intro"  src="images/landing.png" width="100%">
@@ -27,18 +27,22 @@
     </audio>
 
 </div>
+<p id="p1">Press <span> S </span>  to play player 1</p>
+   <p id="p2">Press  <span>J</span>   to play player 2</p>
 
       <img id="logo" src="images/logo.png" width="400">
 <div class="container">
+
         <div id = "car"><img src="images/car.png" width="500" height="180" >
 
               <div id = "wheel1"><img id =" spin" src="images/carfw.png" height="75"></div>
               <div id = "wheel2"><img src="images/carbw.png" height="77"></div>
     </div>
-              <div id= "car2"><img src="images/car2.png" width="500" height="320" >
+        <div id= "car2"><img src="images/car2.png" width="500" height="150" >
               <div id = "wheel3"><img src="images/car2fw.png" height="70"></div>
               <div id = "wheel4"><img src="images/car2bw.png" height="70"></div>
   </div>
+   <div id= "object"><img src="images/car3.png" width="500" height="100" ></div>
 </div>
 <div class="player1">
          <img  src="images/player1.png" width="600" height="300">
