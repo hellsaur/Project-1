@@ -49,19 +49,19 @@ function go(race) {
     }
     // up
     if(key == 87) {
-     car1.style.top = (car1Y+=10) + "px";
+     car1.style.top = (car1Y-=10) + "px";
     }
     //down
        if(key == 88) {
-     car1.style.top = (car1Y-=10) + "px";
+     car1.style.top = (car1Y+=10) + "px";
     }
     //up
      if(key == 85) {
-     car2.style.top= (car1Y+=10) + "px";
+     car2.style.top= (car1Y-=10) + "px";
     }
     //down
        if(key == 77) {
-     car2.style.top = (car1Y-=10) + "px";
+     car2.style.top = (car1Y+=10) + "px";
     }
   collision();
    winner();
