@@ -2,11 +2,11 @@
 
 *** Marco Acosta / 10/06/2017 ***
 
-# SPEEDRACER or STREETRACER
+STREETRACER
 
-## What is SPEEDRACER or STREETRACER
+what is STREETRACER?
 
-Speedracer is basically a racing game where 2 players race each other for VICTORY!!.
+street racer is basically a racing game where 2 players race each other for VICTORY!!.
 Reason i chose this game is because i have an idea of how to do them and also because i love racing games!!!!
 
 ## Wireframe
@@ -26,9 +26,13 @@ Challenges i will think would be between the keycodes, keyframes and actually ma
 when one racer wins, a pop up of the racer will show up saying he won the race.
 
  day 1: pesudocode + html
+
  day 2: javascript
+
  day 3: javascript + css
+
  day 4: more javascript + debug
+
  day 5: debugs
 
 ## Links and Resources
@@ -41,7 +45,9 @@ http://www.developphp.com/video/JavaScript/WAPG-5-Collision-Hit-Detection-DOM-Pr
 HOW TO PLAY:
 
 Press "S" to move player 1 forwards and use keys "W" and "X" to move up and down.
+
 Press "J" to move player 2 forwards and use keys "U"  and "M"  to move up and down.
+
 Avoid the incoming cars to win the race!
 
 
