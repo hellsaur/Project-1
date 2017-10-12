@@ -15,6 +15,11 @@ let starB = document.querySelector(".starB");
 let replayB = document.querySelector(".replayB");
 let landingB = document.querySelector('.landingB');
 let object = document.querySelector('#object');
+
+// i learned how to call an element from css by calling it with the offset for a collition. I found this method here:
+//  http://www.developphp.com/video/JavaScript/WAPG-5-Collision-Hit-Detection-DOM-Programming-JavaScript-Tutorial.
+
+
 objectX = object.offsetLeft;
 objectY = object.offsetTop;
 objectH = object.offsetHeight ;
@@ -27,8 +32,8 @@ car2Y = car2.offsetTop;
 car2H = car2.offsetHeight;
 car2W = car2.offsetWidth;
 car2X = car2.offsetLeft ;
-let c1 =0;
-let c2 =0;
+// let c1 =0;
+// let c2 =0;
 
 // sets keycodes for each player and had to transform numbers into pixels
 // by using transform: translate into px
@@ -42,17 +47,21 @@ function go(race) {
     if(key == 74) {
     car2.style.left = (car2X+=10) + "px";
     }
+    // up
     if(key == 87) {
-     car1.style.top = (car1X+=10) + "px";
+     car1.style.top = (car1Y+=10) + "px";
     }
+    //down
        if(key == 88) {
-     car1.style.top = (car1X-=10) + "px";
+     car1.style.top = (car1Y-=10) + "px";
     }
+    //up
      if(key == 85) {
-     car2.style.top= (car1X+=10) + "px";
+     car2.style.top= (car1Y+=10) + "px";
     }
+    //down
        if(key == 77) {
-     car2.style.top = (car1X-=10) + "px";
+     car2.style.top = (car1Y-=10) + "px";
     }
   collision();
    winner();
@@ -66,6 +75,7 @@ function collision (){
 if(deleted == false){
 
   if ((car1X + car1W) > objectX && car1X< (objectX+objectW) && (car1Y + car1H) > objectY && car1Y < (objectY+objectH)){
+    debugger
      car1.style.left = (car1X=0) + "px";
     deleted = true;
     alert("player 1 crashed")

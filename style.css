@@ -104,18 +104,24 @@ span{
   position:absolute;
 top: 390px;
 left: 0px;
+ height: 100px;
+  width: 500px;
 
 }
 #car2{
 position: absolute;
 top: 500px;
-left: 0px
+left: 0px;
+ height: 100px;
+  width: 500px;
 }
 #object{
 position: absolute;
-  top: 62%;
+  top: 550px;
   left: 3000px;
   z-index: -1;
+  height: 100px;
+  width: 500px;
   animation: loop 1s linear infinite;
 }
 
