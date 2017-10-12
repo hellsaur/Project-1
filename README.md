@@ -35,5 +35,15 @@ when one racer wins, a pop up of the racer will show up saying he won the race.
 
 game:   https://www.youtube.com/watch?v=cw1tp8Ku6wA
 image :  https://lh3.googleusercontent.com/G_Y3_sPzrVFV4e73qEZ2CwDwz0TXQOOLVdOAPChQEYlnVANfMY-PDyxN7idmvG7vJB8=h900
+ I learned how to call an element from css by calling it with the offset for a collition. I found this method here:
+http://www.developphp.com/video/JavaScript/WAPG-5-Collision-Hit-Detection-DOM-Programming-JavaScript-Tutorial.
 
+HOW TO PLAY:
+
+Press "S" to move player 1 forwards and use keys "W" and "X" to move up and down.
+Press "J" to move player 2 forwards and use keys "U"  and "M"  to move up and down.
+Avoid the incoming cars to win the race!
+
+
+Used  Javascript / HTML and CSS.
 
